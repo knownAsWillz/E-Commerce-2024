@@ -1,0 +1,188 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set background to black */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Ensure header background is black */
+    width: 100%;
+}
+
+.logo {
+    font-size: 2em; /* Increase font size for the logo */
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em; /* Increase font size for menu items */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #000; /* Ensure hero section background is black */
+    height: calc(100vh - 80px); /* Adjust height to fill viewport */
+    overflow: hidden;
+}
+
+.hero-text h1 {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff8533;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Build Section Styling */
+.build-section {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    padding: 50px;
+    background-color: #000; /* Ensure build section background is black */
+}
+
+.build-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* Keep the form elements aligned to the start */
+    margin-right: 50px; /* Add some space between options and carousel */
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.option label {
+    margin-bottom: 5px;
+}
+
+.option input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.build-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Keep carousel elements in a row */
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 50px;
+    background-color: #000; /* Ensure about section background is black */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the about content */
+}
+
+.about-section h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 600px; /* Restrict the paragraph width for better readability */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
